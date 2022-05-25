@@ -1,8 +1,7 @@
-FROM node:14-alpine
+FROM node:16-alpine
 
 RUN \
   apk update && \
-  apk upgrade && \
   apk add git && \
   git clone https://github.com/v8/web-tooling-benchmark.git && \
   cd web-tooling-benchmark && \
